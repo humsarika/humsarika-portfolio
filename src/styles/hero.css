@@ -1,0 +1,79 @@
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 1rem 7rem;
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  
+  /* Text Content */
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 1.5rem 0;
+  }
+  
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .hero-buttons button {
+    padding: 0.8rem 1rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hire-me {
+    background-color: black;
+    color: white;
+  }
+  
+  /* .view-projects {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+  } */
+  
+  
+  .view-projects:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Image Box Effect */
+  .hero-image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+   .hero-image-container img {
+    width: 450px;  /* Reduced size */
+    height: auto;  /* Maintain aspect ratio */
+    /* border-radius: 10px; */
+    z-index: 2;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    object-fit: contain; /* Ensures no cropping */
+  }
+
+  
