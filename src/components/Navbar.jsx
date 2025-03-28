@@ -1,56 +1,30 @@
 import { useState } from "react";
-import { Box, Flex, Link, IconButton } from "@chakra-ui/react";
-
+import "../styles/navbar.css"; // Import your CSS file
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Box bg="white" px={6} py={4} boxShadow="md">
-      <Flex justify="space-between" align="center">
-        {/* Logo */}
-        <Box fontSize="xl" fontWeight="bold" color="gray.800">
-          Humsarika
-        </Box>
+    <div className="navbar-container">
+      <nav className="navbar">
+        {/* <div className="nav-container"> */}
+          <div className="logo">Humsarika</div>
 
-        {/* Hamburger Menu - Mobile */}
-        <IconButton
-          display={{ base: "block", md: "none" }}
-        //   icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-          onClick={() => setIsOpen(!isOpen)}
-          variant="ghost"
-          color="gray.800"
-          aria-label="Toggle Menu"
-        />
+          {/* Hamburger Menu */}
+          <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? "✖" : "☰"}
+          </div>
 
-        {/* Links */}
-        <Flex
-          display={{ base: isOpen ? "flex" : "none", md: "flex" }}
-          flexDirection={{ base: "column", md: "row" }}
-          align={{ base: "center", md: "center" }}
-          position={{ base: "absolute", md: "static" }}
-          top="60px"
-          left="0"
-          width="100%"
-          bg={{ base: "white", md: "transparent" }}
-          py={{ base: 4, md: 0 }}
-          gap={6}
-        >
-          <Link color="gray.800" fontSize="lg">
-            Home
-          </Link>
-          <Link color="gray.800" fontSize="lg">
-            Projects
-          </Link>
-          <Link color="gray.800" fontSize="lg">
-            About
-          </Link>
-          <Link color="gray.800" fontSize="lg">
-            Contact
-          </Link>
-        </Flex>
-      </Flex>
-    </Box>
+          {/* Links */}
+          <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        {/* </div> */}
+      </nav>
+    </div>
   );
 };
 
