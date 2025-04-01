@@ -1,6 +1,7 @@
 
 import Navbar from './components/Navbar';
 import Hero from "./components/hero";
+import About from "./components/about";
 // css internal
 const styles = {
   mainAppContainer: {
@@ -14,9 +15,17 @@ const styles = {
 
 function App() {
   return (
-    <div className="main-app-container" style={styles.mainAppContainer}>
-      <Navbar />
-      <Hero />
+    <div>
+      <div className="main-app-container" style={styles.mainAppContainer}>
+        <Navbar />
+        <Hero />
+      </div>
+      
+      <About />
+      {/* Add other components here */}
+      {/* <Projects /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

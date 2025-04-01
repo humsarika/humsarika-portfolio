@@ -1,0 +1,33 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: #2c4054;
+    padding: 50px;
+  }
+  
+  .about-content {
+    max-width: 600px;
+    text-align: justify;
+    color: #fff;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+
+    line-height: 1.6;
+  }
+
+  .highlight-about-text {
+    color: #ceba49; 
+  font-weight: bold;
+  
+  }
+  

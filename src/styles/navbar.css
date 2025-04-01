@@ -11,7 +11,7 @@
   }
 
 .navbar {
-    background: rgb(0, 0, 0);
+    background: #2c4054;
     padding: 15px 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     /* position: fixed; */
@@ -57,7 +57,7 @@
   }
   
   .nav-links li a:hover {
-    color: #007bff;
+    color: #dbbd35;
   }
   
   /* Hamburger Menu (Mobile) */
