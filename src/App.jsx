@@ -2,6 +2,9 @@
 import Navbar from './components/Navbar';
 import Hero from "./components/hero";
 import About from "./components/about";
+import Education from "./components/education";
+import Experience from "./components/experience";
+import Projects from "./components/projects";
 // css internal
 const styles = {
   mainAppContainer: {
@@ -9,7 +12,8 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    padding: "10px 100px"
+    padding: "10px 100px",
+    backgroundColor: "#fff"
   },
 };
 
@@ -22,8 +26,9 @@ function App() {
       </div>
       
       <About />
-      {/* Add other components here */}
-      {/* <Projects /> */}
+      <Education />
+      <Experience />
+      <Projects />
       {/* <Contact /> */}
       {/* <Footer /> */}
     </div>

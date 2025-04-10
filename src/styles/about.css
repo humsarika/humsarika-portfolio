@@ -2,21 +2,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 80vh;
     background: #2c4054;
     padding: 50px;
   }
   
   .about-content {
-    max-width: 600px;
+    max-width: 1000px;
     text-align: justify;
     color: #fff;
   }
   
-  .about h2 {
-    font-size: 2rem;
+  .about-title {
+    font-size: 3.5rem;
 
     margin-bottom: 10px;
+  }
+  .about-intro{
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
   
   .about p {

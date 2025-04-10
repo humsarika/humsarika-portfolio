@@ -13,8 +13,8 @@ const Hero = () => {
         <p>I build seamless digital experiences, crafting both the frontend and backend with precision and creativity. </p>
 
         <div className="hero-buttons">
-          <button className="btn hire-me">Hire Me</button>
-          <button className="btn view-projects">See My Work</button>
+          <button className="btn contact-me">Contact Me</button>
+          <button className="btn view-resume">Resume</button>
         </div>
       </div>
       <div className="hero-image-container">

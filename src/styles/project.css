@@ -1,0 +1,61 @@
+.projects-section {
+    padding: 200px  100px ;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 3rem;
+    margin-top: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-7px);
+    transition: all 0.3s ease;
+    
+  }
+  
+  .project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .project-content {
+    padding: 1rem;
+  }
+  
+  .tech-stack {
+    margin: 0.5rem 0;
+  }
+  
+  .tech-tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 0.25rem 0.6rem;
+    margin: 0.2rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .project-links a {
+    margin-right: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-links a:hover {
+    text-decoration: underline;
+  }
+  

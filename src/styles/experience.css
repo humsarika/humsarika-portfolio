@@ -1,0 +1,65 @@
+.experience-section{
+    background-color: #2c4054;
+    padding: 40px 30px;
+    /* margin: 40px auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+.experience-entry{
+    width: 1100px;
+    margin: auto 50px;
+}
+  
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    font-size: 16px;
+    color: #cb9f1a;
+  }
+  
+  .experience-left {
+    max-width: 70%;
+    font-weight: bold;
+    /* text-align: left; */
+    color: #cb9f1a;
+  }
+  
+  /* .experience-left br + span {
+    font-weight: normal;
+    font-style: italic;
+  } */
+  
+  .experience-right {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    color: #cfb628;
+    white-space: nowrap;
+  }
+  
+  .experience-details {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 2;
+    color: #ffffff;
+    /* text wrap */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    text-align: justify;
+    list-style:disc;
+
+  }
+  
+  .experience-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  

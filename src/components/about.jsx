@@ -5,8 +5,8 @@ const About = () => {
   return (
     <section className="about">
       <div className="about-content">
-        <h2>About Me</h2>
-        <h2>
+        <h2 className="section-title-light">About Me</h2>
+        <h2 className="about-intro">
           Hi there! I'm <span className="highlight-about-text">Sarika Kushwaha</span>
            
         </h2>

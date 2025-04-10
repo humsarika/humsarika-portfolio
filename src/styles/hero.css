@@ -5,7 +5,7 @@
     justify-content: space-around;
     height: 100vh;
     padding: 1rem 7rem;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     position: relative;
   }
   
@@ -41,7 +41,7 @@
     transition: all 0.3s ease;
   }
   
-  .hire-me {
+  .contact-me {
     background-color: #2c4054;
     color: white;
   }
@@ -53,7 +53,7 @@
   } */
   
   
-  .view-projects:hover {
+  .view-resume:hover {
     background-color: #2c4054;
     color: white;
   }
