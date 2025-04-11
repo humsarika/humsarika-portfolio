@@ -8,12 +8,12 @@ import '../styles/experience.css';
 
 const Experience = () => {
   return (
-    <div className="experience-section">
+    <section className="experience-section" id='experience'>
     <h2 className="section-title-light">Internship Experience</h2>
     {experienceData.map((item, index) => (
       <ExperienceItem key={index} {...item} />
     ))}
-  </div>
+  </section>
   );
 };
 

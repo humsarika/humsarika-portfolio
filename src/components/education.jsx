@@ -5,7 +5,7 @@ import '../styles/education.css';
 
 const Education = () => {
     return (
-        <section className="education-section">
+        <section className="education-section" id='education'>
             <h2 className="section-title-dark">Education</h2>
 
             <div className="education-timeline">

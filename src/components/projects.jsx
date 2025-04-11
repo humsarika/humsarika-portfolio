@@ -6,14 +6,14 @@ import "../styles/project.css";
 
 const Projects = () => {
   return (
-    <div className="projects-section">
+    <section className="projects-section" id="projects">
       <h2 className="section-title-dark">Projects</h2>
       <div className="projects-grid">
         {projectData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

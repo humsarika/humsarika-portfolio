@@ -1,0 +1,35 @@
+.footer {
+    background-color: #2c4054;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    border-top: 1px solid #ffffff1a;
+  }
+  
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer__social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer__social a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer__social a:hover {
+    color: #dbbd35;
+  }
+  .footer__social {
+    margin-bottom: 5px;
+  }
+  

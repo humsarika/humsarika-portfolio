@@ -3,7 +3,7 @@ import "../styles/about.css";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-content">
         <h2 className="section-title-light">About Me</h2>
         <h2 className="about-intro">
@@ -11,7 +11,7 @@ const About = () => {
            
         </h2>
         <p>
-          a <span className="highlight-about-text">Computer Science graduate</span> who loves turning ideas into real applications. My main focus is <span className="highlight-about-text">backend development</span>,
+          A <span className="highlight-about-text">Computer Science graduate</span> who loves turning ideas into real applications. My main focus is <span className="highlight-about-text">backend development</span>,
           where I build secure and scalable systems that make web apps run smoothly.
         </p>
         <p>

@@ -1,0 +1,49 @@
+/* .certificate-section {
+    background-color: #f1f1f1;
+  } */
+  
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .accordion-item {
+    background-color: #ffffff;
+    color: #2c4054;
+    width: 60%;
+    padding: 5px;
+    border-radius: 12px;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-item:hover {
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  .accordion-content {
+    padding : 0 60px;
+    font-size: 14px;
+  }
+  
+  .accordion-content a {
+    color: #cb9f1a;
+    font-weight: bold;
+    cursor: pointer;
+
+    text-decoration: none;
+    margin: 5px 0;
+  }
+  
