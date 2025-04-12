@@ -61,7 +61,7 @@
   
   @media screen and (max-width: 1200px) {
     .experience-entry {
-      /* width: 90%; */
+      width: 90%;
       margin: 20px;
     }
   }

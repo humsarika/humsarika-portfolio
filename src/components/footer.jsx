@@ -11,13 +11,13 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </div> */}
         <div class="footer__social">
-                <a href="https://www.linkedin.com/in/sarika-kushwaha22/" target="_blank" rel="noopener noreferrer"><i
-                        class='bx bxl-linkedin bx-md'></i></a>
-                <a href="https://www.twitter.com/humsarika22" target="_blank" rel="noopener noreferrer"><i
-                        class='bx bxl-twitter bx-md'></i></a>
-                <a href="https://www.github.com/humsarika" target="_blank" rel="noopener noreferrer"><i
-                        class='bx bxl-github bx-md'></i></a>
-
+          <a href="https://www.linkedin.com/in/sarika-kushwaha22/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          <a href="https://www.twitter.com/humsarika22" target="_blank" rel="noopener noreferrer">X (twitter) </a>
+          <a href="https://www.github.com/humsarika" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="https://leetcode.com/u/humsarika/ " target="_blank" rel="noopener noreferrer">Leetcode</a>
+          <a href="https://www.codechef.com/users/humsarika" target="_blank" rel="noopener noreferrer">Codechef</a>
+            
+          
         </div>
       </div>
     </footer>

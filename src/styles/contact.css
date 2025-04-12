@@ -101,3 +101,83 @@
 .submit-btn:hover {
   background-color: #b88d0c;
 }
+
+/* Responsive styles for smaller screens */
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .modal-box {
+    width: 75%;
+    padding: 1rem;
+  }
+
+  .modal-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .modal-header p {
+    font-size: 0.9rem;
+  }
+
+  .modal-form input,
+  .modal-form textarea {
+    font-size: 0.95rem;
+    padding: 9px 10px;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .modal-close-btn {
+    font-size: 1rem;
+    top: 10px;
+    right: 12px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .modal-box {
+    width: 70%;
+    /* height: 0vh; */
+    /* border-radius: 0; */
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .modal-header h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .modal-header p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .modal-form {
+    width: 100%;
+  }
+
+  .modal-form input,
+  .modal-form textarea {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .modal-close-btn {
+    font-size: 1rem;
+    top: 10px;
+    right: 15px;
+  }
+}
+

@@ -1,0 +1,22 @@
+.main-app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 100px;
+    background-color: #fff;
+  }
+  
+  /* 🔥 Responsive for tablets and mobiles */
+  @media (max-width: 768px) {
+    .main-app-container {
+      padding: 10px 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-app-container {
+      padding: 10px 15px;
+    }
+  }
+  

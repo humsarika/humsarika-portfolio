@@ -10,17 +10,8 @@ import Skills from "./components/skills";
 import Certificate from "./components/certificate";
 import ContactOverlay from "./components/contactOverlay";
 import Footer from "./components/footer";
-// css internal
-const styles = {
-  mainAppContainer: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "10px 100px",
-    backgroundColor: "#fff"
-  },
-};
+
+import "./app.css";
 
 // const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -31,10 +22,10 @@ function App() {
   const [showContact, setShowContact] = useState(false);
   return (
     <div>
-      <div className="main-app-container" style={styles.mainAppContainer}>
+      <div className="main-app-container">
         {/* <Navbar /> */}
         <Navbar onContactClick={() => setShowContact(true)} />
-        <Hero />
+        <Hero onContactClick={() => setShowContact(true)} />
       </div>
       
       <About />

@@ -26,6 +26,35 @@
   color: #ceba49;
   font-weight: bold;
 }
+/* For screens around 1024px (small laptops / tablets landscape) */
+@media screen and (max-width: 1024px) {
+  .about {
+    margin-top: 55px;
+    flex-direction: column-reverse;
+    padding: 2rem 3rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-intro {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+  }
+  .about-content {
+    padding: 0 1rem;
+  }
+
+  
+}
+
 
 /* 💻 Tablet screens */
 @media screen and (max-width: 768px) {
