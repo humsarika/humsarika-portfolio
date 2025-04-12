@@ -20,7 +20,7 @@ const Certificate = () => {
             onClick={() => toggle(index)}
           >
             <div className="accordion-title">
-              <h3>{cert.title}</h3>
+              <p>{cert.title}</p>
               <span>{activeIndex === index ? "close" : <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/chevron-down.png" alt="chevron-down"/>}</span>
             </div>
             {activeIndex === index && (

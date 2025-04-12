@@ -38,7 +38,7 @@ export default function ContactOverlay({ show, onClose }) {
   return (
     <div className="modal-overlay">
   <div className="modal-box">
-  <button className="modal-close-btn" onClick={onClose}>x</button>
+  <button className="modal-close-btn" onClick={onClose}>X</button>
     
     <div className="modal-header">
       <h3>Contact Me</h3>

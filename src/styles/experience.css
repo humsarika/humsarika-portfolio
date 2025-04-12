@@ -45,9 +45,8 @@
     font-size: 18px;
     line-height: 2;
     color: #ffffff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
+    /* word-wrap: break-word;
+    hyphens: auto; */
     max-width: 90%;
     text-align: justify;
 
@@ -58,5 +57,52 @@
     border: none;
     border-top: 1px solid #ccc;
     margin: 20px 0;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .experience-entry {
+      /* width: 90%; */
+      margin: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .experience-section {
+      padding: 50px 20px; /* added padding for mobile */
+    }
+    .experience-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .experience-right {
+      text-align: left;
+      font-size: 16px;
+    }
+  
+    .experience-details {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+  
+    .experience-entry {
+      width: 100%;
+      margin: 20px 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+
+  
+    .experience-left,
+    .experience-right {
+      font-size: 16px;
+    }
+  
+    .experience-details {
+      font-size: 15px;
+      line-height: 1.6;
+    }
   }
   

@@ -76,4 +76,62 @@
     object-fit: contain; /* Ensures no cropping */
   }
 
-  
+  /* Tablets */
+@media screen and (max-width: 992px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 2rem 4rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .hero-image-container img {
+    width: 300px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .hero-image-container{
+    top: 50px;
+  }
+  .hero-image-container img {
+    width: 250px;
+  }
+}
