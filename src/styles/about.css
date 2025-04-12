@@ -19,6 +19,7 @@
 .about p {
   font-size: 1.5rem;
   line-height: 1.5;
+  text-align: justify;
 }
 
 .highlight-about-text {
@@ -28,13 +29,16 @@
 
 /* 💻 Tablet screens */
 @media screen and (max-width: 768px) {
+  /* .about {
+    height: max-content;
+  } */
   .about-intro {
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
   }
 
   .about p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .about-content {
@@ -45,15 +49,16 @@
 /* 📱 Mobile screens */
 @media screen and (max-width: 480px) {
   .about-intro {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .about p {
     font-size: 1rem;
-    text-align: left;
+
+    line-height: 1.2;
   }
 
-  .about {
+  /* .about {
     padding: 30px 15px;
-  }
+  } */
 }

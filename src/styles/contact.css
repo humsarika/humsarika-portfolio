@@ -1,97 +1,103 @@
+/* Overlay covers full screen, stays on top */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0,0,0,0.6);
-  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
+  overflow: hidden;
 }
 
+/* Modal box styles */
 .modal-box {
   background-color: #fff;
   padding: 2rem;
+  border-radius: 12px;
   width: 90%;
   max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   position: relative;
+  z-index: 10000;
 }
 
-.close-btn {
+/* Close button styles */
+.modal-close-btn {
   position: absolute;
   top: 12px;
+  right: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
   background: transparent;
   border: none;
-  font-size: 3rem;
   cursor: pointer;
 }
 
-.modal h2 {
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
-  text-align: center;
-  color: #222;
+/* Header inside modal */
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
 }
 
-form {
+.modal-header p {
+  margin: 8px 0 20px;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* Form styles */
+.modal-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
-form input,
-form textarea {
-  padding: 10px;
-  font-size: 1rem;
+.modal-form label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #444;
+}
+
+.modal-form input,
+.modal-form textarea {
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  resize: none;
-}
-
-form textarea {
-  min-height: 100px;
-}
-
-form button {
-  background-color: #cb9f1a;
-  color: white;
-  border: none;
-  padding: 10px;
   font-size: 1rem;
-  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border-color: #d4a017;
+  outline: none;
+}
+
+.modal-form textarea {
+  resize: none;
+  min-height: 100px;
+
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 12px;
+  background-color: #d4a017;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s ease;
 }
 
-form button:hover {
-  background-color: #2c4054;
-}
-
-/* 🎯 Mobile Optimization */
-@media (max-width: 480px) {
-  .modal-box {
-    padding: 1.5rem;
-    width: 70%;
-
-  }
-
-  form input,
-  form textarea {
-    font-size: 0.9rem;
-  }
-
-  form button {
-    font-size: 0.95rem;
-  }
-
-  .close-btn {
-    font-size: 1.5rem;
-    top: 10px;
-    right: 10px;
-  }
+.submit-btn:hover {
+  background-color: #b88d0c;
 }

@@ -47,13 +47,13 @@ export default function ContactOverlay({ show, onClose }) {
 
     <form onSubmit={handleSubmit} className="modal-form">
       <label>Name</label>
-      <input type="text" name="name" required />
+      <input type="text" name="name" placeholder="Full Name" required />
 
       <label>Email</label>
-      <input type="email" name="email" required />
+      <input type="email" name="email" placeholder="your.email@gmail.com" required />
 
       <label>Message </label>
-      <textarea name="message" required/>
+      <textarea name="message" placeholder="Write Your Message here ..." required/>
 
       <button type="submit" className="submit-btn">Submit</button>
     </form>
