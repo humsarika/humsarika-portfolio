@@ -17,7 +17,7 @@
   backdrop-filter: blur(10px); /* Glass effect */
   padding: 12px 24px;
   width: 100%;
-  max-width: 1080px;  /* This keeps the navbar width fixed on larger screens */
+  max-width: 1100px;  
   height: 65px;
   border-radius: 50px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -74,29 +74,28 @@
   }
 
   .navbar {
-    padding: 5px; /* Reduced padding to make the navbar smaller */
-    height: 50px; /* Reduced height */
-    width: 100%; /* Ensures navbar takes up full width */
-    max-width: 100%; /* Forces the navbar to be 100% width */
-    border: none; /* Remove border for mobile */
-    border-radius: 0; /* Remove rounded corners for mobile */
+    padding: 5px; 
+    height: 50px;
+    width: 100%; 
+    max-width: 100%; 
+    border: none; 
+    border-radius: 0; 
   }
 
   .nav-links {
     position: absolute;
     top: 42px;
     left: 0;
-    width: 100%; /* Full width for the nav links */
+    width: 100%; 
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
-    gap: 14px; /* Slightly reduced gap between items */
+    gap: 14px; 
     display: none;
-    background-color: #2c4054; /* Ensure background on mobile */
+    background-color: #2c4054; 
     border-radius: 0 0 20px 20px;
   }
 
-  /* When the menu is open */
   .nav-links.open {
     display: flex;
     animation: slideDown 0.3s ease-in-out;
@@ -113,19 +112,19 @@
     }
   }
 
-  /* Adjust logo size for mobile */
+ 
   .logo {
     font-size: 18px;
   }
 
-  /* Make the nav links a little larger and spaced for mobile */
+
   .nav-links li a {
     font-size: 18px;
   }
 }
 
 @media (max-width: 480px) {
-  /* Further optimization for very small screens */
+ 
   .logo {
     font-size: 16px;
   }

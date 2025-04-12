@@ -1,4 +1,4 @@
-// components/Experience.jsx
+
 import React from 'react';
 import experienceData from '../data/experienceData';
 import ExperienceItem from './experienceItem';

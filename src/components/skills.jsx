@@ -39,8 +39,7 @@ const Skills = () => {
             <h3>{skillGroup.category}</h3>
             <div className="skill-list">
                 {skillGroup.items.map((skill, index) => (
-                    <div key={index} className="skill-item">
-                        {/* <div className="skill-icon"></div> */}
+                    <div key={index} className="skill-item">{/* <div className="skill-icon"></div> */}
                         <span>{skill}</span>
                         </div>
                 ))}

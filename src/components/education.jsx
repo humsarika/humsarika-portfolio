@@ -1,7 +1,7 @@
 // components/Education.jsx
 import React from 'react';
 import '../styles/education.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Education = () => {
     return (

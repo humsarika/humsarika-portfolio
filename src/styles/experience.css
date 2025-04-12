@@ -45,8 +45,7 @@
     font-size: 18px;
     line-height: 2;
     color: #ffffff;
-    /* word-wrap: break-word;
-    hyphens: auto; */
+
     max-width: 90%;
     text-align: justify;
 
@@ -68,7 +67,7 @@
   
   @media screen and (max-width: 768px) {
     .experience-section {
-      padding: 50px 20px; /* added padding for mobile */
+      padding: 50px 20px; 
     }
     .experience-header {
       flex-direction: column;
