@@ -24,7 +24,7 @@ export default function ContactOverlay({ show, onClose }) {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/send-email', {
+      const res = await fetch('https://portfolio-backend-i3pq.onrender.com/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, message }),
