@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <p>&copy; {new Date().getFullYear()}  Sarika Kushwaha. All rights reserved.</p>
-        <div class="footer__social">
+        <div className="footer__social">
           <a href="https://www.linkedin.com/in/sarika-kushwaha22/" target="_blank" rel="noopener noreferrer">Linkedin</a>
           <a href="https://www.twitter.com/humsarika22" target="_blank" rel="noopener noreferrer">X(twitter) </a>
           <a href="https://www.github.com/humsarika" target="_blank" rel="noopener noreferrer">Github</a>

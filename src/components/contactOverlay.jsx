@@ -1,8 +1,10 @@
 // import React, { useState } from 'react';
 import "../styles/contact.css" // for styling
-
+import { toast } from 'react-toastify';
 export default function ContactOverlay({ show, onClose }) {
   if (!show) return null;
+  const isValidEmail = (email) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -11,7 +13,13 @@ export default function ContactOverlay({ show, onClose }) {
     const message = e.target.message.value.trim();
 
     if (!name || !email || !message) {
-      alert("Please fill in all fields!");
+      // alert("Please fill in all fields!");
+      toast.error("Please fill in all fields!");
+      return;
+    }
+    if (!isValidEmail(email)) {
+      // alert("Please enter a valid email address!");
+      toast.warn("Please enter a valid email address!");
       return;
     }
 
@@ -24,14 +32,20 @@ export default function ContactOverlay({ show, onClose }) {
 
       const data = await res.json();
       if (data.success) {
-        alert("Message sent! ✅");
+        // alert("Message sent! ✅");
+        toast.success("Message sent! ✅");
+
         onClose();
       } else {
-        alert("Failed to send message 😓");
+        // alert("Failed to send message 😓");
+        toast.error("Failed to send message 😓");
+
       }
     } catch (err) {
       console.error(err);
-      alert("Error sending message 😵");
+      // alert("Error sending message 😵");
+      toast.error("Error sending message 😵");
+
     }
   };
 
@@ -47,13 +61,13 @@ export default function ContactOverlay({ show, onClose }) {
 
     <form onSubmit={handleSubmit} className="modal-form">
       <label>Name</label>
-      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="text" name="name" placeholder="Full Name" />
 
       <label>Email</label>
-      <input type="email" name="email" placeholder="your.email@gmail.com" required />
+      <input type="email" name="email" placeholder="your.email@gmail.com" />
 
       <label>Message </label>
-      <textarea name="message" placeholder="Write Your Message here ..." required/>
+      <textarea name="message" placeholder="Write Your Message here ..."/>
 
       <button type="submit" className="submit-btn">Submit</button>
     </form>

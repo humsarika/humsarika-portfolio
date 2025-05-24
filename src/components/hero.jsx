@@ -23,7 +23,7 @@ const Hero = ({ onContactClick }) => {
         </div>
       </div>
       <div className="hero-image-container">
-        <img src={profilePic} alt="Sarika Image" />
+        <img src={profilePic} alt="profile pic Sarika Image" />
       </div>
     </section>
   );
