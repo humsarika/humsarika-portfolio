@@ -10,6 +10,8 @@ import Skills from "./components/skills";
 import Certificate from "./components/certificate";
 import ContactOverlay from "./components/contactOverlay";
 import Footer from "./components/footer";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import "./app.css";
 
@@ -21,24 +23,28 @@ import "./app.css";
 function App() {
   const [showContact, setShowContact] = useState(false);
   return (
-    <div>
-      <div className="main-app-container">
-        {/* <Navbar /> */}
-        <Navbar onContactClick={() => setShowContact(true)} />
-        <Hero onContactClick={() => setShowContact(true)} />
+    <>
+      <div>
+
+        <div className="main-app-container">
+          {/* <Navbar /> */}
+          <Navbar onContactClick={() => setShowContact(true)} />
+          <Hero onContactClick={() => setShowContact(true)} />
+        </div>
+
+        <About />
+        <Education />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Certificate />
+        <Footer />
+
+
+        <ContactOverlay show={showContact} onClose={() => setShowContact(false)} />
       </div>
-      
-      <About />
-      <Education />
-      <Experience />
-      <Projects />
-      <Skills/>
-      <Certificate />
-      <Footer />
-
-
-      <ContactOverlay show={showContact} onClose={() => setShowContact(false)} />
-    </div>
+      <ToastContainer position="top-center" autoClose={5000} pauseOnHover />
+    </>
   );
 }
 
