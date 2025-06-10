@@ -25,7 +25,7 @@ const projectData = [
       "Auto Emailer is a Flask-based web app that automates sending personalized job application emails to HRs. It includes user authentication, file uploads via Google Cloud Storage, and ensures secure data handling. Files are deleted after emails are sent. Error handling and logging are implemented for smooth functionality.",
     techStack: ["Flask", "HTML", "CSS", "Python", "Google Cloud Storage"],
     github: "https://github.com/humsarika/Auto-emailer",
-    demo: "auto-emailer-gamma.vercel.app",
+    demo: "https://auto-emailer-gamma.vercel.app",
   },
   {
     title: "Travel Mate",
@@ -33,8 +33,8 @@ const projectData = [
     description:
       "Travel Mate is an e-commerce website for travel bags and accessories, featuring secure user authentication, a shopping cart system, and product filtering based on product categories. I implemented user sessions for maintaining a logged-in state and preserving cart data.",
     techStack: ["MongoDB", "Express.js", "Node.js", "Templating engine - Handlebars", "CSS", "Figma"],
-    github: "https://github.com/yourusername/travelmate",
-    demo: "https://yourdemo.com/travelmate",
+    github: "https://github.com/humsarika/travel-mate-ecommerce",
+    demo: "https://travel-mate-ecommerce.onrender.com/",
   },
   {
     title: "FraudCatch",
