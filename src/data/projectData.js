@@ -1,4 +1,5 @@
 import autoEmailerImage from "../assets/images/autoemailer.png";
+import codeReviewImage from "../assets/images/codereview-ai.png";
 import jobifyImage from "../assets/images/jobify.png";
 import fraudCatchImage from "../assets/images/fraudcatch.png";
 import travelMateImage from "../assets/images/travelmate.png";
@@ -19,7 +20,16 @@ const projectData = [
     demo: "",
   },
   {
-    title: "Auto Emailer (Ongoing)",
+    title: "Code Review AI",
+    image: codeReviewImage,
+    description:
+      "Developed a full-stack AI-powered Code Review platform where users can submit code snippets and receive detailed feedback on code quality, performance, security risks, best practices, and improvements. The backend leverages GROQ APIs for AI-driven analysis, while the React frontend features a Prism.js-powered code editor and clean UI.",
+    techStack: ["React.js", "Prism.js", "CSS", "Node.js", "Express.js", "GROQ API"],
+    github: "https://github.com/humsarika/code-review-ai",
+    demo: "https://code-review-ai-two.vercel.app/",
+  },
+  {
+    title: "Auto Emailer",
     image: autoEmailerImage,
     description:
       "Auto Emailer is a Flask-based web app that automates sending personalized job application emails to HRs. It includes user authentication, file uploads via Google Cloud Storage, and ensures secure data handling. Files are deleted after emails are sent. Error handling and logging are implemented for smooth functionality.",

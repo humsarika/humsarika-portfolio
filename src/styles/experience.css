@@ -17,14 +17,14 @@
     justify-content: space-between;
     /* align-items: flex-start; */
     font-size: 20px;
-    color: #cb9f1a;
+    color: #ceba49;
   }
   
   .experience-left {
     /* max-width: 70%; */
     font-weight: bold;
     /* text-align: left; */
-    color: #cb9f1a;
+    color: #ceba49;
   }
    
   /* .experience-left br + span {
@@ -36,7 +36,7 @@
     font-size: 18px;
     font-weight: bold;
     text-align: right;
-    color: #cfb628;
+    color: #ceba49;
     white-space: nowrap;
   }
   

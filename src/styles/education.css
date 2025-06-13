@@ -1,7 +1,6 @@
 .education-section {
 
     margin: 40px auto;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +29,6 @@
    
     padding: 20px;
     border-radius: 5px;
-    
     width: 900px;
     height: auto;
     transition: background 0.3s ease;
@@ -53,6 +51,7 @@
     flex-direction: column;
     gap: 6px;
     text-align: right;
+  
 }
 
 .education-right {
@@ -60,30 +59,31 @@
     flex-direction: column;
     gap: 6px;
     text-align: left;
+    
 }
 
 
 .education-degree {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #bba31a;
+    color: #ceba49;
 }
 
 .education-institute {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 8px;
     color: #2c4054;
 }
 
 .education-year {
-    font-size: 24px;
+    font-size: 1rem;
     color: #aaa;
 }
 
 .education-score {
-    font-size: 16px;
+    font-size: 1rem;
     color: #01ac12;
 }
  
