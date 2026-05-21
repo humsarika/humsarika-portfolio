@@ -10,7 +10,7 @@ const experienceData = [
             "Gaining exposure to user life cycle management, authentication flows, and access control in enterprise IAM enviorment.",
             "Building understanding of security operations, log analysis, and IAM-related workflows through learning and project exposure."
                 ],
-    }
+    },
     {
         company: "UROOKA GLOBAL",
         role: "UI Designer Intern",
