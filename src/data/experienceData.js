@@ -1,5 +1,17 @@
 const experienceData = [
     {
+        company:"Wipro Limited",
+        role: "Project Engineer",
+        dateRange: "Sept 2025 - Present",
+        location: "Navi Mumbai, Maharashtra",
+        details: [
+            "Completed training in Infrastructire Security, including SIEM, EDR/XDR, IAM, and cloud fundamentals.",
+            "Currently working on the HSBC project where Okta workforce Identity Clloud is used for identity and accesss management.",
+            "Gaining exposure to user life cycle management, authentication flows, and access control in enterprise IAM enviorment.",
+            "Building understanding of security operations, log analysis, and IAM-related workflows through learning and project exposure."
+                ],
+    }
+    {
         company: "UROOKA GLOBAL",
         role: "UI Designer Intern",
         dateRange: "Jul 2023 - Jul 2023",
